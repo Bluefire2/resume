@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--
+ * HTML-Sheets-of-Paper (https://github.com/delight-im/HTML-Sheets-of-Paper)
+ * Copyright (c) delight.im (https://www.delight.im/)
+ * Licensed under the MIT License (https://opensource.org/licenses/MIT)
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Emulating real sheets of paper in web documents (using HTML and CSS)">
+    <title>Sheets of Paper</title>
+    <link rel="stylesheet" type="text/css" href="css/sheets-of-paper-a4.css">
+
+    <style>
+        #name-header {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #headline {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        table#main-table {
+            width: 100%;
+        }
+
+        #left-column {
+            width: 40%;
+            border-right: 2px solid rgba(211, 211, 211, 0.25);
+            padding-right: 1cm;
+        }
+
+        #right-column {
+            width: 60%;
+            padding-left: 1cm;
+        }
+
+        /*TODO*/
+        table td {
+            /*padding-top: 0;*/
+            vertical-align: top;
+        }
+
+        .top-resume-header {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+
+        .secondary-header {
+            font-weight: bold;
+            font-size: 14px;
+            color: cadetblue;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-left: 3px;
+        }
+
+        .tertiary-header {
+            font-weight: lighter;
+            font-size: 12px;
+            color: gray;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-left: 3px;
+        }
+
+        ul.list {
+            margin-top: 3px;
+            padding-left: 5px;
+            list-style-type: armenian;
+        }
+
+        ul.list li {
+            font-size: 10px;
+            line-height: 1.6;
+            /*color: #5b5b5b;*/
+        }
+    </style>
+</head>
+<body class="document">
+<div class="page">
+    <h1 id="name-header">KYRYLO CHERNYSHOV</h1>
+    <p id="headline">
+        (607) 216-7797 | <a href="mailto:kc875@cornell.edu">kc875@cornell.edu</a> | <a href="https://github.com/Bluefire2">https://github.com/Bluefire2</a> | <a href="https://www.linkedin.com/in/kc875">https://www.linkedin.com/in/kc875</a>
+    </p>
+    <table id="main-table">
+        <tr>
+            <td id="left-column">
+                <h3 class="top-resume-header">CORE COMPETENCIES</h3>
+                <ul class="list">
+                    <li>JavaScript (Node.js, React, D3)</li>
+                    <li>Python (NumPy, SciPy, Pandas)</li>
+                    <li>Machine Learning & Data Analysis</li>
+                    <li>Java</li>
+                    <li>OCaml</li>
+                    <li>C & C++</li>
+                    <li>Unix</li>
+                    <li>LaTeX</li>
+                </ul>
+
+                <h3 class="top-resume-header">SELF-DIRECTED PROJECTS</h3>
+                <h4 class="secondary-header">Phyl-o-matic</h4>
+                <ul class="list">
+                    <li>Automates a pipeline for running Bayesian phylogenetic analyses using PhyloBayes.</li>
+                    <li>Written in Python for Dr. Bryan Danforth’s lab.</li>
+                    <li>Automatically detects convergence and starts the next run when the current run converges.</li>
+                    <li>Due to be published in a paper later this year.</li>
+                </ul>
+
+                <h4 class="secondary-header">Matchday</h4>
+                <ul class="list">
+                    <li>Calculates a probabilistic model of football league tables based on individual match predictions from an API.</li>
+                    <li>Currently implemented on the Premier League and the Brazilian Serie A.</li>
+                    <li>Written in Node.js, visualization in React.</li>
+                </ul>
+
+                <h4 class="secondary-header">Parkrun</h4>
+                <ul class="list">
+                    <li>Scrapes and processes 5K run data from and calculates a distribution of running times per age category.</li>
+                    <li>Can be used to estimate a runner’s percentile in their age group given their 5K time.</li>
+                    <li>Written in Python with Pandas.</li>
+                </ul>
+
+                <h4 class="secondary-header">Statistical Distribution Plotter</h4>
+                <ul class="list">
+                    <li>I wrote software to help my high school statistics teacher visually teach the concept of statistical distributions.</li>
+                    <li>I have maintained the project over the past four years, and I have used it in my tutoring.</li>
+                    <li>Written with Node.js, React and D3.</li>
+                </ul>
+
+                <h4 class="secondary-header">TeXifier</h4>
+                <ul class="list">
+                    <li>A Discord bot that typesets LaTeX in chat.</li>
+                    <li>Written with Node.js.</li>
+                </ul>
+
+                <h4 class="secondary-header">SortVisualise</h4>
+                <ul class="list">
+                    <li>Graphical software that visualizes various sorting algorithms, showing how the array is processed.</li>
+                    <li>Written with Java and Swing.</li>
+                </ul>
+            </td>
+            <td id="right-column">
+                <h3 class="top-resume-header">EDUCATION</h3>
+                <h4 class="secondary-header">Cornell University, Ithaca, NY</h4>
+                <h5 class="tertiary-header">B.A. double major in Computer Science and Statistics</h5>
+                <ul class="list">
+                    <li>Automates a pipeline for running Bayesian phylogenetic analyses using PhyloBayes.</li>
+                    <li>Written in Python for Dr. Bryan Danforth’s lab.</li>
+                    <li>Automatically detects convergence and starts the next run when the current run converges.</li>
+                    <li>Due to be published in a paper later this year.</li>
+                </ul>
+
+                <h3 class="top-resume-header">EXPERIENCE</h3>
+                <h4 class="secondary-header">Software Engineering Intern, Google, June 2019 – </h4>
+                <h5 class="tertiary-header">Sunnyvale, CA</h5>
+                <ul class="list">
+                    <li>TODO</li>
+                </ul>
+
+                <h4 class="secondary-header">Lead Software Developer, July 2018 – </h4>
+                <h5 class="tertiary-header">Cornell University, Ithaca, NY</h5>
+                <ul class="list">
+                    <li>Lead the team that develops and maintains Cornell's in-house Course Management System, used by over 5000 students and course staff.</li>
+                    <li>Fixed a critical data-loss bug, and have overseen over 25 PRs, features and bugfixes that have had a positive effect on end-user workflow.</li>
+                    <li>Work with Prof. Andrew Myers, and lead and co-ordinate the general team effort, including assigning and delegating work.</li>
+                </ul>
+
+                <h4 class="secondary-header">Teaching Assistant, August – May 2019</h4>
+                <h5 class="tertiary-header">Cornell University, Ithaca, NY</h5>
+                <ul class="list">
+                    <li>Teach a discussion section of about 30 students twice a week, present material covered in the course in more depth and work with the students to help them master it.</li>
+                    <li>Grade students' assignments and recitations once a week, providing direct feedback to help them improve their programming skills and their grade.</li>
+                </ul>
+
+                <h4 class="secondary-header">Data Analysis Research Intern, June – August 2018</h4>
+                <h5 class="tertiary-header">Cornell University, Ithaca, NY</h5>
+                <ul class="list">
+                    <li>Wrote high-quality, maintainable Python code to extract large amounts of data from UCE probe sets and genome annotations and to process this data in various ways. Two papers with this code are to be published in October.</li>
+                    <li>Applied statistical and data visualization techniques to enable the researchers to present their data.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript">
+    // window.print();
+</script>
+</body>
+</html>
